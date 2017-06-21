@@ -9,15 +9,54 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.user-info {
+.all-users {
   flex-basis: 23%;
   display: flex;
   flex-direction: column;
   border: 1px solid #000;
-  align-items: center;
   text-align: left;
   margin-top: 2%;
+  padding-left: 1%;
+  text-decoration: none;
 }
-.user-info img {
+.all-users h2 {
+  color: blue;
+}
+.available {
+  color: red;
+  font-size: 1.25rem;
+}
+.all-users img {
   width: 23vw;
+}
+.user-details {
+  display: flex;
+  margin: 5% 3%;
+}
+.user-details img {
+  border-radius: 50%;
+  border: 1px solid grey;
+  flex-basis: 25%;
+}
+.user-city-job {
+  flex-basis: 50%;
+  padding-left: 3%;
+}
+.user-details h2 {
+  font-size: 2.25rem;
+}
+.address-company {
+  margin-top: 1%;
+}
+.email-phone {
+  margin-top: 1%
+}
+.skills-education {
+  margin-left: 10%;
+}
+.skills-flex {
+  display: flex;
+}
+.skill-attributes {
+  margin-left: 30%;
 }

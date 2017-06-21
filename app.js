@@ -14,9 +14,9 @@ app.get ('/users', function (req, res){
   res.render('users', {allUsers: userData})
 })
 app.get ('/users/:id', function (req, res){
-  let userID = req.params.id
-  let userData = data.users
-  res.render('users', {userDetails: userData})
+  let id = req.params.id
+  let userID = data.users[id-1]
+  res.render('users', {userDetails: userID})
 })
 app.listen(3000, function () {
   console.log('Successfully started express application!')
