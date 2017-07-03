@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>User Directory</title>
+    <title>User Directory - Unemployed Robots</title>
     <link rel="stylesheet" href="/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
@@ -27,41 +27,6 @@
       {{^job}}<span class="available">Available for hire</span>{{/job}}
     </a>
     {{/allUsers}}
-  </div>
-  <div class="user-flex">
-    {{#userDetails}}
-      <div class="user-details">
-        <img src="{{avatar}}">
-        <div class="user-city-job">
-          <h2>{{name}}</h2>
-          {{#address.city}}<h4 class="address-company">{{address.city}}, {{address.country}}{{/address.city}}{{^address.city}}{{address.country}}{{/address.city}} | {{#job}}{{job}}, {{company}}</h4>{{/job}}{{^job}}<span class="available">Available for hire</span>{{/job}}
-          <h4 class ="email-phone">{{email}} | {{phone}}</h4>
-        </div>
-      </div>
-      <div class="skills-education">
-        <div class="education">
-        {{#university}}
-        <tr><strong>Education</strong></tr>
-        {{/university}}
-        {{^university}}
-        {{/university}}
-        {{#university}}
-          <td>{{university}}</td>
-        {{/university}}
-        {{^university}}
-        {{/university}}
-        </div>
-          <br>
-        <div class="skills-flex">
-          <tr><strong>Skills</strong></tr>
-          <div class="skills">
-          <div class="skill-attributes">
-            <td>{{#skills}}{{.}}<br>{{/skills}}</td>
-          </div>
-          </div>
-        </div>
-      </div>
-    {{/userDetails}}
   </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -60,3 +60,8 @@ body {
 .skill-attributes {
   margin-left: 30%;
 }
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin: 5% 0%;
+}
